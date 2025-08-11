@@ -1,0 +1,240 @@
+.bgimg{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(pool\ 3.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+   
+  }
+
+  html {
+  scroll-behavior: smooth;
+}
+  
+  body{
+    margin: 0;
+    padding: 0;
+  }
+
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0%;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+  .nav-link:hover::after {
+  width: 100%;
+}
+
+ .bookingform{
+    max-width: 250px;
+    border: 1px solid #ced4da;
+    margin: 10% auto 0;
+ }
+ .radio-btn{
+    margin: 0 20px;
+  }
+  
+ .radio-btn span{
+    color:#fff;
+    margin-right: 5px;
+    font-size: 15px;
+    font-family: 'Flamenco', cursive;
+  }
+  .booking-form-text{
+    padding: 0px 20px 20px;
+    text-align: center;
+   }
+   .booking-form-text label{
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 15px;
+    color:#fff;
+    font-family: 'Flamenco', cursive;
+   }
+   .form-group{
+    width: 180px;
+    display: inline-block;
+   }
+   
+   .form-control{
+    font-size: 12px !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    background: transparent !important;
+    box-shadow: none !important;
+   }
+   .custom-select{
+   color: #fff !important;
+    font-size: 12px !important;
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    background-color: transparent !important; 
+    appearance: none; /* remove default arrow styling */
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    padding-right: 25px;
+   }
+   .custom-select option {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Flamenco', cursive;
+  }
+  .btn-transparent {
+    background: transparent;
+    color: #fff; 
+    border: none; 
+    border-bottom: 1px solid #fff; 
+    padding: 8px 20px;
+    border-radius: 0;
+    cursor: pointer;
+    transition: border-color 0.3s, color 0.3s;
+    font-family: 'Flamenco', cursive;
+    font-size: 16px;
+  }
+
+  .btn-transparent:hover {
+    color: #ffd700; 
+    border-bottom-color: #ffd700; 
+  }
+
+   .oursection{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("infinity-pool-view.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    margin-top: 120px;
+    padding: 50px;
+  
+  }
+  .oursection h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fruktur', cursive;
+    }
+  .rowsetting{
+      margin: 100px 0px !important;
+      font-family: 'Flamenco', cursive;
+      font-size: 25px;
+  }
+
+  .mycolumn{
+    margin-top: 100px;
+    font-family: 'Flamenco', cursive;
+  }
+
+  .mycolumn h1{
+    font-size: 50px;
+    font-weight: bold;
+    /* margin-top: 120px; */
+    font-family: 'Fruktur', cursive;
+  }
+
+  .service-card:hover{
+    background-color: rgb(168, 245, 245);
+    transition: background-color 0.3s ease;
+  }
+
+  .bg-primary{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    }
+    .fa-car{
+    margin-top: 10px;
+    }
+    .fa-child{
+    margin-top: 10px;
+    }
+    .fa-map-marker{
+    margin-top: 10px;
+    }
+    .fa-cutlery{
+    margin-top: 10px;
+    } 
+    .fa-glass{
+      margin-top: 10px;
+    }
+  .fa-shopping-basket{
+    margin-top: 10px;
+  }
+
+    .rowsetting p{
+    padding: 10px;
+    color: #333;
+    }
+
+.myrow{
+      margin-top: 100px;
+      font-family: 'Flamenco', cursive;
+  }
+.portfolio h1{
+      font-size: 50px;
+      font-weight: bold;
+      margin-top: 120px;
+      font-family: 'Fruktur', cursive;
+  }
+.hotelaround h1{
+     font-size: 50px;
+     font-weight: bold;
+     margin: 100px;
+    font-family: 'Fruktur', cursive;
+  }
+.rowhotel{
+     margin-top: 100px;
+    font-family: 'Flamenco', cursive;
+  }
+.page-footer{
+          margin-top: 120px;
+          font-family: 'Flamenco', cursive;
+  }
+.headerset{
+          font-family: 'Fruktur', cursive;
+  }
+.navbar-font{
+          font-family: 'Fruktur', cursive;
+  }
+.ourbooking{
+          font-family: 'Flamenco', cursive;
+  }
+.carousel-item {
+  min-height: 150px;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+  padding: 30px;
+}
+.Heading h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fruktur', cursive;  
+}
+.carousel-item p{
+    font-family: 'Flamenco', cursive;
+}
+.carousel-item small{
+    font-family: 'Flamenco', cursive;
+}
+  
