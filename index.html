@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FINAL_PROJECT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fruktur&display=swap" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="bgimg">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-transparent">
+            <div class="container navbar-font">
+             <a href=""class="navbar-brand text-white font-weight-bold">OCEANVIEW<sub>luxuary hotel</sub></a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenavbar">
+                   <span class="navbar-toggler-icon"></span>
+      
+                 </button>
+                <div class="collapse navbar-collapse text-center" id="collapsenavbar">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="navbar-item">
+                      <a href="#About Us"  class="nav-link text-white">About Us</a>
+                     </li>
+                     <li class="navbar-item">
+                      <a href="#Services"  class="nav-link text-white">Services</a>
+                     </li>
+                     <li class="navbar-item">
+                      <a href="#Room"  class="nav-link text-white">Rooms</a>
+                     </li>
+                     <li class="navbar-item">
+                      <a href="#Contact"  class="nav-link text-white">Contact</a>
+                     </li>
+                  </ul>
+                </div>
+            </div>
+         </nav>
+         <div class="container text-center text-white headerset">
+          <h6>welcome to</h6>
+          <h1>Oceanview Hotel</h1>
+          <h6>A place to experience and enjoy life</h6>
+          </div>
+<!--------------------BOOKING FORM----------------------------------------------------------------->  
+    <div class="container">
+        <div class="col-lg-5 m-auto d-block bookingform">
+        <!-- <form action="registration.php" method="POST" onsubmit="return checkForm(this);"> -->
+            <form action="#" onsubmit="return validation();">
+
+                <div class=" text-center radio-btn">
+                    <input type="radio" class="btn" name="check"><span>Family Trip</span>
+                    <input type="radio" class="btn" name="check" checked="checked"><span>Business Trip</span>   
+                </div><br> 
+
+             <div class="booking-form-text">
+
+                <!-- <div class="form-group"> -->
+                <label>Username</label>
+                    <input type="text" name="user" class="form-control" id="user" placeholder=" enter your username" autocomplete="off">
+                    <span id="username" class="text-danger font-weight-light" ></span>
+                <!-- </div> <br> -->
+
+                <!-- <div class="form-group"> -->
+                    <label>Email ID</label>
+                        <input type="text" name="email" class="form-control" id="emailid" placeholder="enter your email id" autocomplete="off">
+                        <span id="emailID" class="text-danger font-weight-light" ></span>
+                <!-- </div> <br>  -->
+
+                <!-- <div class="form-group"> -->
+                    <label>Mobile number</label>
+                        <input type="text" name="phnnum" class="form-control" id="phnnum" placeholder="enter your mobile number" autocomplete="off">
+                        <span id="phonenumber" class="text-danger font-weight-light" ></span>
+                <!-- </div> <br>  -->
+                    <label>Room</label>
+                        <select class="custom-select">
+                            <option value="" disabled selected>Select Room</option>
+                            <option value="1">Single Room</option>
+                            <option value="2">Double Room</option>
+                            <option value="3">Triple Room</option>
+                            <option value="4">Suite Room</option>
+                            <option value="5">For Business</option>
+                        </select>
+
+                <div class="form-group">
+                    <label>Check-in</label>
+                        <input type="date" name="checkin" class="form-control" id="checkin">
+                        <span id="checkindate" class="text-danger font-weight-light" ></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Check-out</label>
+                        <input type="date" name="checkout" class="form-control" id="checkout">
+                        <span id="checkoutdate" class="text-danger font-weight-light" ></span>
+                </div> <br>
+
+                <div class="form-group">
+                    <label>Adult</label>
+                     <input type="number" min="0" max="9" class="form-control" value="1">
+                     <span id="adultno" class="text-danger font-weight-light" ></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Childern</label>
+                     <input type="number" min="0" max="9" class="form-control" value="0">
+                     <span id="child" class="text-danger font-weight-light" ></span>
+                </div> <br>
+                 
+                    <input type="Submit" name="Submit" value="Submit" class="btn-transparent">
+                  
+        
+
+                </div>
+            
+            </form>
+         <!--</form>-->
+
+        </div>
+    </div>
+</div>
+
+<!-----------------About Us SECTION-------------------------------------------------------------------->
+<section class="oursection text-center text-white" id="About Us">
+    <h1>About Us</h1>
+    <div class="row rowsetting">
+      <div class="container-fluid">
+          <p class="text-white text-center">
+            Welcome to Oceanview Luxury Hotel — where contemporary design meets coastal serenity.<br>
+            From curated interiors to personalized concierge service, we offer a modern escape crafted for travelers who appreciate style, comfort, and seamless hospitality.<br><br>
+            Whether you're unwinding by the sea or closing important deals,<br>our business-ready amenities — including high-speed Wi-Fi, executive meeting spaces, and tailored services — ensure your stay is as productive as it is relaxing.
+          </p>
+      </div>
+   </div>
+ </section>
+
+<!-----------------Service SECTION-------------------------------------------------------------------->
+<section class=" mycolumn bg-light text-center" id="Services">
+    <h1>SERVICES</h1>
+    <div class="row rowsetting">
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="service-card p-3 rounded">
+          <div class="imgsetting d-block m-auto bg-transparent"><i class="fa fa-map-marker fa-3x"></i> 
+          </div>
+ 
+        <h2>Travel Plan</h2>
+        <p>Let us design your perfect itinerary with local tours, excursions, and personalized experiences.
+            From city sights to hidden gems, we help you explore with ease.</p>
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="service-card p-3 rounded">
+          <div class="imgsetting d-block m-auto bg-transparent"><i class=" fa fa-car fa-3x"></i> 
+          </div>
+ 
+        <h2>Hire Driver</h2>
+        <p>Travel in comfort with our reliable chauffeur-driven car rental service.
+          Ideal for business meetings, sightseeing, or airport transfers.</p>
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="service-card p-3 rounded">
+          <div class="imgsetting d-block m-auto bg-transparent"><i class=" fa fa-child fa-3x"></i> 
+          </div>
+ 
+        <h2>Babysitting</h2>
+        <p>Relax and unwind while our professional babysitters care for your little ones.
+          Safe, friendly, and engaging care for your children, right at the hotel.</p>
+       </div>
+      </div>
+
+       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="service-card p-3 rounded">
+          <div class="imgsetting d-block m-auto bg-transparent"><i class=" fa fa-cutlery fa-3x"></i> 
+          </div>
+ 
+        <h2>Catering Service</h2>
+        <p>Host unforgettable events with our premium on-site catering tailored to your preferences.
+          From corporate functions to private parties, we serve elegance on every plate.</p>
+       </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="service-card p-3 rounded">
+          <div class="imgsetting d-block m-auto bg-transparent"><i class=" fa fa-glass fa-3x"></i> 
+          </div>
+ 
+        <h2>Bar and Drink</h2>
+        <p>Unwind with handcrafted cocktails, fine wines, and premium spirits at our stylish bar.
+          Perfect for an evening with friends or a quiet drink by the sea.</p>
+       </div>
+      </div>
+
+       <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="service-card p-3 rounded">
+          <div class="imgsetting d-block m-auto bg-transparent"><i class=" fa fa-shopping-basket fa-3x"></i> 
+          </div>
+ 
+        <h2>Laundry</h2>
+        <p>Enjoy fresh, clean clothes every day with our express laundry and dry-cleaning services, available on request.
+          We handle your garments with care and deliver them back crisp and ready.</p>
+       </div>
+      </div>
+
+   </div>
+ </section>
+
+
+ <!------------------------------PORTFOLIO------------------------------------------------------------>
+
+ <section class="portfolio bg-light" id="Room">
+    <div class="container text-center">
+      <h1>OUR HOTEL ROOMS</h1>
+      <div class="row myrow">
+       <div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+          <!-- Card -->
+<div class="card">
+
+ <!-- Card image -->
+ <div class="view overlay">
+   <img class="card-img-top" src="single room.jpg" alt="Card image cap">
+   <a href="#!">
+     <div class="mask rgba-white-slight"></div>
+   </a>
+ </div>
+
+ <!-- Card content -->
+ <div class="card-body">
+
+   <!-- Title -->
+   <h4 class="card-title">Single Room</h4>
+   <!-- Text -->
+   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+ </div>
+
+</div>
+<!-- Card -->
+</div>
+
+<!-- 2nd card -->
+<div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+ <!-- Card -->
+<div class="card">
+
+<!-- Card image -->
+<div class="view overlay">
+<img class="card-img-top" src="double bed.jpg" alt="Card image cap">
+<a href="#!">
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+
+<!-- Card content -->
+<div class="card-body">
+
+<!-- Title -->
+<h4 class="card-title">Double Room</h4>
+<!-- Text -->
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+</div>
+
+</div>
+<!-- Card -->
+</div>
+
+<!-- 3nd card -->
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+ <!-- Card -->
+<div class="card">
+
+<!-- Card image -->
+<div class="view overlay">
+<img class="card-img-top" src="king room.jpg" alt="Card image cap">
+<a href="#!">
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+
+<!-- Card content -->
+<div class="card-body">
+
+<!-- Title -->
+<h4 class="card-title">Family Room</h4>
+<!-- Text -->
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+</div>
+
+</div>
+<!-- Card -->
+</div>
+
+<!-- 2nd card -->
+
+<div class="col-lg-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+ <!-- Card -->
+<div class="card">
+
+<!-- Card image -->
+<div class="view overlay">
+<img class="card-img-top" src="2nd suit pool.jpg" alt="Card image cap">
+<a href="#!">
+<div class="mask rgba-white-slight"></div>
+</a>
+</div>
+
+<!-- Card content -->
+<div class="card-body">
+
+<!-- Title -->
+<h4 class="card-title">Suit Room</h4>
+<!-- Text -->
+<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+
+</div>
+
+</div>
+<!-- Card -->
+</div>
+
+
+</div>
+ </div>
+      </div>
+</section>
+
+
+<section class="hotelaround bg-light">
+  <div class="container text-center">
+    <h1>AROUND THE HOTEL</h1>
+    <div class="row rowhotel">
+     <div class="col-md-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+        <!-- Card -->
+<div class="card">
+
+ <!-- Card image -->
+ <div class="view overlay">
+   <img class="card-img-top" src="bar.jpg" alt="Card image cap">
+   <a href="#!">
+     <div class="mask rgba-white-slight"></div>
+   </a>
+ </div>
+
+ <!-- Card content -->
+ <div class="card-body">
+
+   <!-- Title -->
+   <h4 class="card-title">lounge bar</h4>
+   <!-- Text -->
+   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+
+ </div>
+
+</div>
+<!-- Card -->
+
+      </div>
+
+      <!-- 2nd card -->
+
+      <div class="col-md-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+       <!-- Card -->
+<div class="card">
+
+<!-- Card image -->
+<div class="view overlay">
+  <img class="card-img-top" src="restaurent.jpg" alt="Card image cap">
+  <a href="#!">
+    <div class="mask rgba-white-slight"></div>
+  </a>
+</div>
+
+<!-- Card content -->
+<div class="card-body">
+
+  <!-- Title -->
+  <h4 class="card-title">Restaurent</h4>
+  <!-- Text -->
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ 
+
+</div>
+
+</div>
+<!-- Card -->
+
+     </div>
+
+     <!--3rd card-->
+
+     <div class="col-md-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+       <!-- Card -->
+<div class="card">
+
+<!-- Card image -->
+<div class="view overlay">
+  <img class="card-img-top" src="spa.jpg" alt="Card image cap">
+  <a href="#!">
+    <div class="mask rgba-white-slight"></div>
+  </a>
+</div>
+
+<!-- Card content -->
+<div class="card-body">
+
+  <!-- Title -->
+  <h4 class="card-title">Spa and Wellness</h4>
+  <!-- Text -->
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+ 
+</div>
+
+</div>
+<!-- Card -->
+
+     </div>
+
+     <!-- 4th card -->
+
+     <div class="col-md-3 col-md-3 col-sm-3 col-10 d-block m-auto">
+       <!-- Card -->
+<div class="card">
+
+<!-- Card image -->
+<div class="view overlay">
+  <img class="card-img-top" src="conference hall.jpg" alt="Card image cap">
+  <a href="#!">
+    <div class="mask rgba-white-slight"></div>
+  </a>
+</div>
+
+<!-- Card content -->
+<div class="card-body">
+
+  <!-- Title -->
+  <h4 class="card-title">Conference Hall</h4>
+  <!-- Text -->
+  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  
+
+</div>
+
+</div>
+<!-- Card -->
+
+     </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!----------------------------------------- Feedback-------------------------------------------------------->
+
+<section class="Heading container my-5">
+  <h1 class="text-center mb-4">What Our Customers Say?</h1>
+
+  <div id="feedbackCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="d-flex flex-column align-items-center text-white">
+          <p class="lead text-center px-3">"Amazing service! The rooms were cozy and the staff was very friendly."</p>
+          <small>- John Doe</small>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="d-flex flex-column align-items-center text-white">
+          <p class="lead text-center px-3">"A perfect stay for our business trip. Highly recommended."</p>
+          <small>- Sarah Lee</small>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="d-flex flex-column align-items-center text-white">
+          <p class="lead text-center px-3">"The location is fantastic and the amenities are top-notch!"</p>
+          <small>- Michael Smith</small>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="carousel-control-prev" href="#feedbackCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#feedbackCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</section>
+
+<!-------------------------FOOTER-------------------------------------------------------------------->
+
+<!-- Footer -->
+<footer class="page-footer font-small bg-dark" id="Contact">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+   
+      <!-- Footer links -->
+      <div class="row text-center text-md-left mt-3 pb-3">
+   
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase text-white mb-4 font-weight-bold">Company name</h6>
+          <p class="text-white">Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
+            consectetur
+            adipisicing elit.</p>
+        </div>
+        <!-- Grid column -->
+   
+        <hr class="w-100 clearfix d-md-none">
+   
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase text-white mb-4 font-weight-bold">Products</h6>
+          <p>
+            <a href="#!">MDBootstrap</a>
+          </p>
+          <p>
+            <a href="#!">MDWordPress</a>
+          </p>
+          <p>
+            <a href="#!">BrandFlow</a>
+          </p>
+          <p>
+            <a href="#!">Bootstrap Angular</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+   
+        <hr class="w-100 clearfix d-md-none">
+   
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h6 class="text-uppercase text-white mb-4 font-weight-bold">Useful links</h6>
+          <p>
+            <a href="#!">Your Account</a>
+          </p>
+          <p>
+            <a href="#!">Become an Affiliate</a>
+          </p>
+          <p>
+            <a href="#!">Shipping Rates</a>
+          </p>
+          <p>
+            <a href="#!">Help</a>
+          </p>
+        </div>
+   
+        <!-- Grid column -->
+        <hr class="w-100 clearfix d-md-none">
+   
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h6 class="text-uppercase text-white mb-4 font-weight-bold">Contact</h6>
+          <p class="text-white">
+            <i class="fa fa-home mr-3"></i> Goa, calangute beach 10012,India</p>
+          <p class="text-white">
+            <i class="fa fa-envelope mr-3"></i> oceanview21@gmail.com</p>
+          <p class="text-white">
+            <i class="fa fa-phone mr-3"></i> + 91 9406382900</p>
+          <p class="text-white">
+            <i class="fa fa-print mr-3"></i> + 91 8703456789</p>
+        </div>
+        <!-- Grid column -->
+   
+      </div>
+      <!-- Footer links -->
+   
+      <hr>
+   
+      <!-- Grid row -->
+      <div class="row d-flex align-items-center">
+   
+        <!-- Grid column -->
+        <div class="col-md-7 col-lg-8">
+   
+          <!--Copyright-->
+          <p class="text-center text-md-left">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/">
+              <strong> Oceanview.com</strong>
+            </a>
+          </p>
+   
+        </div>
+        <!-- Grid column -->
+   
+        <!-- Grid column -->
+        <div class="col-md-5 col-lg-4 ml-lg-0">
+   
+          <!-- Social buttons -->
+          <div class="text-center text-md-right">
+            <ul class="list-unstyled list-inline text-white">
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-google-plus"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+   
+        </div>
+        <!-- Grid column -->
+   
+      </div>
+      <!-- Grid row -->
+   
+    </div>
+    <!-- Footer Links -->
+   
+   </footer>
+   <!-- Footer -->
+   
+
+
+
+
+<!-------------------------------JAVASCRIPT----------------------------------------------------------->
+
+    <script>
+function validation() {
+
+    let isValid = true;
+
+    // Get all input values
+    let user = document.getElementById("user").value.trim();
+    let email = document.getElementById("emailid").value.trim();
+    let phone = document.getElementById("phnnum").value.trim();
+    let checkin = document.getElementById("checkin").value;
+    let checkout = document.getElementById("checkout").value;
+
+    // Reset previous error messages
+    document.getElementById("username").innerHTML = "";
+    document.getElementById("emailID").innerHTML = "";
+    document.getElementById("phonenumber").innerHTML = "";
+    document.getElementById("checkindate").innerHTML = "";
+    document.getElementById("checkoutdate").innerHTML = "";
+
+    // Username check
+    if (user === "") {
+        document.getElementById("username").innerHTML = "Username is required";
+        isValid = false;
+    }
+
+    // Email check
+    if (email === "") {
+        document.getElementById("emailID").innerHTML = "Email is required";
+        isValid = false;
+    } else if (!/^\S+@\S+\.\S+$/.test(email)) {
+        document.getElementById("emailID").innerHTML = "Invalid email format";
+        isValid = false;
+    }
+
+    // Phone check
+    if (phone === "") {
+        document.getElementById("phonenumber").innerHTML = "Phone number is required";
+        isValid = false;
+    } else if (!/^\d{10}$/.test(phone)) {
+        document.getElementById("phonenumber").innerHTML = "Enter 10-digit phone number";
+        isValid = false;
+    }
+
+    // Check-in and check-out
+    if (checkin === "") {
+        document.getElementById("checkindate").innerHTML = "Check-in date is required";
+        isValid = false;
+    }
+    if (checkout === "") {
+        document.getElementById("checkoutdate").innerHTML = "Check-out date is required";
+        isValid = false;
+    }
+
+    alert("Thank you for your Booking");
+    location.reload(); // reloads the page after clicking OK
+
+    return isValid; // If false, form won't submit
+
+}
+</script>
+
+</body>
+</html>
